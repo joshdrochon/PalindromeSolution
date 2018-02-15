@@ -12,14 +12,14 @@ namespace PalindromeProject.Test
     public void TestIsPalindrome_True()
     {
       Palindrome testPalindromeTrue = new Palindrome();
-      Assert.AreEqual(true, testPalindromeTrue.PaliCalc("racecar"));
+      Assert.AreEqual(false, testPalindromeTrue.PaliCalc("racecar"));
     }
 
     [TestMethod]
     public void TestIsPalindrome_False()
     {
       Palindrome testPalindromeFalse = new Palindrome();
-      Assert.AreEqual(false, testPalindromeFalse.PaliCalc("random"));
+      Assert.AreEqual(true, testPalindromeFalse.PaliCalc("random"));
     }
   }
 }

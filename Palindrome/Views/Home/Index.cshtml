@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Palindrome</title>
+    <style media="screen">
+      body{
+        background-color: #F0F0E1;
+        padding: 20px;
+      }
+      input{
+        border: 1px solid darkgreen;
+        box-shadow: 6px 6px 6px;
+      }
+
+      label{
+        font-weight: bold;
+      }
+      button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 5px 5px;
+      margin-left: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px
+      }
+
+      button:hover{
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Enter a word to find out if it's a palindrome.</h1>
+    <h3>[A palindrome is a word, number, or sequence of characters which
+    reads the same backward as forward]</h3>
+    <form action="Palindome/PalindromeResult" method="post">
+      <label for="palindrome">Word:</label>
+      <input type="text" name="user-input" size="36">
+      <button type="submit" name="button" size="25">Submit!</button>
+    </form>
+  </body>
+</html>

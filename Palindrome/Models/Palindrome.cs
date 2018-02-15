@@ -10,6 +10,7 @@ namespace PalindromeProject.Models
     {
 
       string userWord = word;
+      // string userWord = "random";
 
       Stack<char> reversedWord = new Stack<char>();
 
@@ -17,22 +18,22 @@ namespace PalindromeProject.Models
 
       Stack<char> tempReversed = new Stack<char>();
 
-      foreach(char letter in userWord)
+      foreach(char character in userWord)
       {
-        reversedWord.Push(letter);
-        tempReversed.Push(letter);
+        reversedWord.Push(character);
+        tempReversed.Push(character);
       }
 
       for(int i = 0; i < userWord.Length; i++)
       {
-        char extractedLetter = reversedWord.Pop();
-        normalizedWord.Push(extractedLetter);
+        char extractedChar = reversedWord.Pop();
+        normalizedWord.Push(extractedChar);
       }
 
       string strTempReversed = tempReversed.ToString();
-      string strNormWord = normalizedWord.ToString();
+      string strNormalizedWord = normalizedWord.ToString();
 
-      if(strTempReversed.Equals(strNormWord))
+      if(strTempReversed == strNormalizedWord)
       {
         return true;
       }
@@ -44,9 +45,3 @@ namespace PalindromeProject.Models
     }
   }
 }
-
-
-
-//Stack.Equals(object)
-//Stack.Pop()
-//Stack.Push()
