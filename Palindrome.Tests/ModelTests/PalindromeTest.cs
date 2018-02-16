@@ -11,15 +11,23 @@ namespace PalindromeProject.Test
     [TestMethod]
     public void TestIsPalindrome_True()
     {
+      //Arrange
       Palindrome testPalindromeTrue = new Palindrome();
-      Assert.AreEqual(true, testPalindromeTrue.PaliCalc("racecar"));
+      //Act
+      bool expectedTrue = testPalindromeTrue.PaliCalc("racecar");
+      //Assert
+      Assert.AreEqual(true, expectedTrue);
     }
 
     [TestMethod]
     public void TestIsPalindrome_False()
     {
+      //Arrange
       Palindrome testPalindromeFalse = new Palindrome();
-      Assert.AreEqual(false, testPalindromeFalse.PaliCalc("random"));
+      //Act
+      bool expectedFalse = testPalindromeFalse.PaliCalc("random");
+      //Assert
+      Assert.AreEqual(false, expectedFalse);
     }
   }
 }
